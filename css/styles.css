@@ -27,7 +27,7 @@ p {
 }
 
 .message {
-  text-align: center;
+    text-align: center;
 }
 
 hr {
@@ -181,4 +181,18 @@ footer p {
         display: table;
         clear: both;
     }
+}
+
+div.scrollmenu {
+    background-color: #333;
+    overflow: auto;
+    white-space: nowrap;
+}
+
+div.scrollmenu li {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px;
+    text-decoration: none;
 }
