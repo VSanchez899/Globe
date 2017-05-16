@@ -27,7 +27,23 @@ p {
 }
 
 .message {
+<<<<<<< HEAD
+  text-align: left;
+}
+
+.social {
+  text-align: center;
+=======
     text-align: center;
+>>>>>>> 339aad8f621d6e675561febbb8dc787cb25a0dae
+}
+
+.blue {
+  color: blue;
+}
+
+.instagram {
+  color: rgb(15, 83, 193);
 }
 
 hr {
@@ -170,10 +186,6 @@ footer p {
     }
 }
 
-#image-size {
-  height: 600px;
-  width: 400px;
-}
 
 @media screen and (min-width:1200px) {
     .box:after {
