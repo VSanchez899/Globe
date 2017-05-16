@@ -170,10 +170,6 @@ footer p {
     }
 }
 
-#image-size {
-  height: 600px;
-  width: 400px;
-}
 
 @media screen and (min-width:1200px) {
     .box:after {
