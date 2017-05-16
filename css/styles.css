@@ -27,7 +27,19 @@ p {
 }
 
 .message {
+  text-align: left;
+}
+
+.social {
   text-align: center;
+}
+
+.blue {
+  color: blue;
+}
+
+.instagram {
+  color: rgb(15, 83, 193);
 }
 
 hr {
