@@ -26,6 +26,10 @@ p {
     color: #000;
 }
 
+.message {
+  text-align: center;
+}
+
 hr {
     max-width: 400px;
     border-color: #999999;
