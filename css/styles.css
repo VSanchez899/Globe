@@ -186,6 +186,12 @@ footer p {
     }
 }
 
+#socialMedia {
+  padding-left: 85px;
+}
+
+
+
 
 @media screen and (min-width:1200px) {
     .box:after {

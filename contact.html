@@ -20,12 +20,11 @@
     <link href="css/styles.css" rel="stylesheet">
 
 
-
 </head>
 
 <body>
 
-    <div class="brand">GLOBE</div>
+    <div class="brand">GLOBE</a></div>
     <div class="address-bar">A taste of the world</div>
 
     <!-- Navigation -->
@@ -88,7 +87,7 @@
                         <strong>3481 Melrose Place
                             <br>Beverly Hills, CA 90210</strong>
                     </p>
-                    
+
                 </div>
                 <div class="clearfix"></div>
             </div>
@@ -104,19 +103,27 @@
                     <h2 class="intro-text text-center">
                         <strong>Social Media</strong>
                     </h2>
+
                     <hr>
                 </div>
 
-                <div class="col-md-12 message">
+                <div class="row">
+                  <div class="col-md-4" id="socialMedia">
+                    <a href="#"><img class="img-responsive img-circle" src="img/facebook.png" alt=""></a>
+                  </div>
 
-                    <p class="social">Follow us on: <br>
-                      <a class="blue" href="https://www.facebook.com/">https://facebook.com/globe</a> <br>
-                      <a href="https://www.twitter.com/">https://twitter.com/globe</a> <br>
-                      <a class ="instagram" href="https://www.instagram.com/">https://instagram.com/globe</a> <br>
-                    </p>
+                  <div class="col-md-4" id="socialMedia">
+                    <a href="#"><img class="img-responsive img-circle" src="img/instagram.png" alt=""></a>
+                  </div>
+
+                  <div class="col-md-4" id="socialMedia">
+                    <a href="#"><img class="img-responsive img-circle" src="img/twitter.png" alt=""></a>
+                  </div>
                 </div>
-                <div class="clearfix"></div>
-            </div>
+
+
+
+
         </div>
         <!-- End of Social Media Box -->
 
@@ -130,7 +137,7 @@
                     </h2>
                     <hr>
 
-           
+
 
                     <p class="text-center">Want to leave a message? Enter your comment below! Don't be afraid to tell us anything about your thoughts on us!</p>
 
@@ -178,10 +185,23 @@
     </footer>
 
     <!-- jQuery -->
-    <script src="js/jquery.js"></script>
+    <!-- <script src="js/jquery.js"></script> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+   <!-- snippet in your web page. -->
 
     <!-- Bootstrap Core JavaScript -->
-    <script src="js/bootstrap.min.js"></script>
+    <!-- <script src="js/bootstrap.min.js"></script> -->
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+    integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+    crossorigin="anonymous"></script>
+
+    <!-- Script to Activate the Carousel -->
+    <script>
+    $('.carousel').carousel({
+        interval: 5000 //changes the speed
+    })
+    </script>
 
 </body>
 
