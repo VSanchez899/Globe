@@ -208,3 +208,27 @@ div.scrollmenu li {
     padding: 14px;
     text-decoration: none;
 }
+.vertical-menu {
+  max-width: 500px;
+    margin: auto;
+    background: white;
+    padding: 10px;
+}
+
+.vertical-menu li {
+   background-color: #3e4242;
+   color: white;
+   display: block;
+   padding: 12px;
+   text-decoration: none;
+   text-align: center;
+}
+
+.vertical-menu li:hover {
+   background-color: #ccc;
+}
+
+.vertical-menu li.active {
+   background-color: #4CAF50;
+   color: white;
+}
