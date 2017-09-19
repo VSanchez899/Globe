@@ -138,27 +138,27 @@
                     <p class="text-center">Provide the required information below and leave us a message.</p>
                     <br>
 
-                    <form role="form">
+                    <form role="form" novalidate="novalidate" action="formValid.html">
                         <div class="row">
                           <!-- First Name -->
                             <div class="form-group col-lg-4">
                                 <label>First Name</label>
-                                <input type="text" class="form-control" placeholder="Input First Name">
+                                <input type="text" class="form-control" placeholder="Input First Name" required="required">
                             </div>
                             <!-- Last Name -->
                             <div class="form-group col-lg-4">
                                 <label>Last Name</label>
-                                <input type="text" class="form-control" placeholder="Input Last Name">
+                                <input type="text" class="form-control" placeholder="Input Last Name" required="required">
                             </div>
                             <!-- Email Address -->
                             <div class="form-group col-lg-4">
                                 <label>Email Address</label>
-                                <input type="email" class="form-control" placeholder="xxxxx@xxxxx.com">
+                                <input type="email" class="form-control" placeholder="xxxxx@xxxxx.com" required="required">
                             </div>
                             <!-- Phone Number -->
                             <div class="form-group col-lg-4">
                                 <label>Phone Number</label>
-                                <input type="tel" class="form-control" placeholder="(XXX)-XXX-XXXX">
+                                <input type="tel" class="form-control" placeholder="(XXX)-XXX-XXXX" required="required">
                             </div>
                             <!-- Gender -->
                             <div class="form-group col-lg-4">
@@ -176,7 +176,7 @@
                             <div class="form-group col-lg-4">
                               <label>Type of Form</label>
                               <br>
-                              <select id="messageType" class="form-group col-lg-12">
+                              <select id="messageType" class="form-group col-lg-12" required="required">
                                 <option value="Question">Question</option>
                                 <option value="Inquiry">Inquiry</option>
                                 <option value="Feedback">Feedback</option>
