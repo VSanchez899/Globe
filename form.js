@@ -4,6 +4,18 @@
 "use strict";
 /*------------------------------------------Global Variables--------------------------------------------------------*/
 
+
+/*----------------------------------------function nameElements--------------------------------------------------------*/
+
+
+
+
+
+
+
+
+
+/*-------------------------------------function createEventListeners--------------------------------------------------------*/
 function createEventListeners() {
   var form = document.getElementsByTagName("form")[0];
   if (form.addEventListener) {
