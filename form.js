@@ -8,26 +8,24 @@ filename: form.js
 
 */
 
+/* Capstone Project - Globe
+ * Names: Vincent Nguyen, Morgan Kennedy, Harold Bermudez, Mikee Agpawan
+ * Date: 9/19/17
+ * Filename: form.js */
 
 "use strict";
 /*------------------------------------------Global Variables--------------------------------------------------------*/
 formValidity = true;
 
 /*------------------------------------------function userName--------------------------------------------------------*/
-function userName(){
+<<<<<<< HEAD
+function inputElements(){
+=======
+function userName() { 
+>>>>>>> origin/master
 
 }
 
-
-/*----------------------------------------function emailAddress--------------------------------------------------------*/
-function emailAddress() {
-
-}
-
-/*----------------------------------------function phoneNumber--------------------------------------------------------*/
-function phoneNumber() {
-
-}
 
 /*----------------------------------------function selectGender--------------------------------------------------------*/
 function selectGender() {
