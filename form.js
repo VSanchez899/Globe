@@ -18,7 +18,9 @@ filename: form.js
 formValidity = true;
 
 /*------------------------------------------function userName--------------------------------------------------------*/
-function inputElements(){
+function inputElements(){ 
+
+}
 
 
 
@@ -47,7 +49,7 @@ function validateForm(evt) {
   formValidity = true;
 
   // VALIDITY TESTS HERE ------ MPK - 9/20/17
-  inputElements(); 
+  inputElements();
 }
 
 
