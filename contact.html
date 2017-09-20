@@ -145,22 +145,28 @@
                             <div class="form-group col-lg-4">
                                 <label>First Name</label>
                                 <input type="text" class="form-control" placeholder="Input First Name" required="required">
+                                <div class="errorMessage"></div>
                             </div>
+
                             <!-- Last Name -->
                             <div class="form-group col-lg-4">
                                 <label>Last Name</label>
                                 <input type="text" class="form-control" placeholder="Input Last Name" required="required">
+                                <div class="errorMessage"></div>
                             </div>
+
                             <!-- Email Address -->
                             <div class="form-group col-lg-4">
                                 <label>Email Address</label>
                                 <input type="email" class="form-control" placeholder="xxxxx@xxxxx.com" required="required">
+                                <div class="errorMessage"></div>
                             </div>
 
                             <!-- Phone Number -->
                             <div class="form-group col-lg-4">
                                 <label>Phone Number</label>
                                 <input type="tel" class="form-control" placeholder="(XXX)-XXX-XXXX" required="required">
+                                <div class="errorMessage"></div>
                             </div>
 
                             <!-- Gender -->
@@ -190,7 +196,8 @@
                             <div class="clearfix"></div>
                             <div class="form-group col-lg-12">
                                 <label>Message</label>
-                                <textarea class="form-control" rows="6" placeholder="Leave us your message :)"></textarea>
+                                <textarea id="messageBox" class="form-control" rows="6" placeholder="Leave us your message :)"></textarea>
+                                <div class="errorMessage"></div>
                             </div>
 
                             <!-- Validate Information -->
