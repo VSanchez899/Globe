@@ -15,13 +15,13 @@ filename: form.js
 
 "use strict";
 /*------------------------------------------Global Variables--------------------------------------------------------*/
-formValidity = true;
+var formValidity = true;
 
 /*------------------------------------------function userName--------------------------------------------------------*/
 function inputElements(){
 
 
-
+}
 /*----------------------------------------function selectGender--------------------------------------------------------*/
 function selectGender() {
 
@@ -34,12 +34,13 @@ function formType() {
 
 /*------------------------------------------function messageBox--------------------------------------------------------*/
 function messageBox() {
-  
+
 }
 
 
 /*-----------------------------------------function validateForm--------------------------------------------------------*/
 function validateForm(evt) {
+  console.log("inside validateForm");
   //Variables
   var form = document.getElementsByTagName("form")[0];
   var errorText = document.getElementById("errorText");
@@ -57,6 +58,24 @@ function validateForm(evt) {
   inputElements();
   formType();
   messageBox();
+
+
+  //For a valid form
+if (formValidity === true) {
+
+  document.getElementById("errorText").innerHTML = "";
+  document.getElementById("errorText").style.display = "none";
+  document.getElementsByTagName("form")[0].submit();
+} //End of if statement
+
+//For a invalid form
+else { //Displays error messageBox
+  console.log(formValidity);
+
+  document.getElementById("errorText").innerHTML = "Please fix the indicated problems and then resubmit your order.";
+  document.getElementById("errorText").style.display = "block";
+  //scroll(0, 0);
+} //End of else statement
 }
 
 
