@@ -37,6 +37,8 @@ function messageBox() {
 
 }
 
+
+/*-----------------------------------------function validateForm--------------------------------------------------------*/
 function validateForm(evt) {
   if (evt.preventDefault) {
     evt.preventDefault();
@@ -47,7 +49,7 @@ function validateForm(evt) {
   formValidity = true;
 
   // VALIDITY TESTS HERE ------ MPK - 9/20/17
-  inputElements(); 
+  inputElements();
 }
 
 
