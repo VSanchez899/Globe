@@ -1,9 +1,17 @@
-// 9-18-17
+/*
+Project 01_07_01
+
+Globe Contact Form JS
+Author: Morgan, Mikee, Harold, Vincent
+
+filename: form.js
+
+*/
 
 
 "use strict";
 /*------------------------------------------Global Variables--------------------------------------------------------*/
-
+formValidity = true;
 
 /*------------------------------------------function userName--------------------------------------------------------*/
 function userName(){
@@ -34,6 +42,19 @@ function formType() {
 /*------------------------------------------function messageBox--------------------------------------------------------*/
 function messageBox() {
 
+}
+
+function validateForm(evt) {
+  if (evt.preventDefault) {
+    evt.preventDefault();
+  } else {
+    evt.returnValue = false;
+  }
+
+  formValidity = true;
+
+  // VALIDITY TESTS HERE ------ MPK - 9/20/17
+  inputElements(); 
 }
 
 
