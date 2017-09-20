@@ -1,12 +1,20 @@
 // 9-18-17
 
+/* Capstone Project - Globe
+ * Names: Vincent Nguyen, Morgan Kennedy, Harold Bermudez, Mikee Agpawan
+ * Date: 9/19/17
+ * Filename: form.js */
 
 "use strict";
 /*------------------------------------------Global Variables--------------------------------------------------------*/
 
 
 /*------------------------------------------function userName--------------------------------------------------------*/
+<<<<<<< HEAD
 function inputElements(){
+=======
+function userName() { 
+>>>>>>> origin/master
 
 }
 
