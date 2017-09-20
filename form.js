@@ -40,6 +40,11 @@ function messageBox() {
 
 /*-----------------------------------------function validateForm--------------------------------------------------------*/
 function validateForm(evt) {
+  //Variables
+  var form = document.getElementsByTagName("form")[0];  
+  var errorText = document.getElementById("errorText");
+
+
   if (evt.preventDefault) {
     evt.preventDefault();
   } else {
