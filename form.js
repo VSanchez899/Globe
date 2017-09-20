@@ -18,13 +18,8 @@ filename: form.js
 formValidity = true;
 
 /*------------------------------------------function userName--------------------------------------------------------*/
-<<<<<<< HEAD
 function inputElements(){
-=======
-function userName() { 
->>>>>>> origin/master
 
-}
 
 
 /*----------------------------------------function selectGender--------------------------------------------------------*/
