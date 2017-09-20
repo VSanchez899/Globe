@@ -18,9 +18,7 @@ filename: form.js
 formValidity = true;
 
 /*------------------------------------------function userName--------------------------------------------------------*/
-function inputElements(){ 
-
-}
+function inputElements(){
 
 
 
@@ -36,14 +34,47 @@ function formType() {
 
 /*------------------------------------------function messageBox--------------------------------------------------------*/
 function messageBox() {
+  var inputElements = document.getElementsByTagName("input");
+  var errorDiv = document.getElementById("errorText");
+  var fieldsetValidity = true;
+  var elementCount = inputElements.length; //Will count the value
+  var currentElement; //Will count the value inputed by the user
 
+  try {
+    console.log("inside try");
+
+    for (var i = 0; i < inputElements.length; i++) {
+        currentElement = inputElements[i];
+        //Change the color of the box if the user has not inputed anything in - "" (Empty)
+        if (currentElement.value === "") {
+          console.log("inside if");
+          currentElement.style.background = "rgb(255, 100, 100)";
+          fieldsetValidity = false;
+        } //End of if statement
+
+        else {
+          //Color will not change and will stay white if nothing is wrong
+          console.log("inside else");
+          currentElement.style.background = "white";
+        } //End of else statement
+      } //End of for statement
+
+
+      if (fieldsetValidity === false) {
+        throw "Please complete all the required fields."
+      } //End of id statement
+      else {
+        errorDiv.style.display = "none";
+        errorDiv.innerHTML = "";
+      } //End of else statement
+  } //End of try clause
 }
 
 
 /*-----------------------------------------function validateForm--------------------------------------------------------*/
 function validateForm(evt) {
   //Variables
-  var form = document.getElementsByTagName("form")[0];  
+  var form = document.getElementsByTagName("form")[0];
   var errorText = document.getElementById("errorText");
 
 
@@ -57,6 +88,8 @@ function validateForm(evt) {
 
   // VALIDITY TESTS HERE ------ MPK - 9/20/17
   inputElements();
+  formType();
+  messageBox();
 }
 
 
