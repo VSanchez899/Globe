@@ -18,7 +18,55 @@ filename: form.js
 var formValidity = true;
 
 /*------------------------------------------function userName--------------------------------------------------------*/
-function inputElements(){
+function inputElements() {
+  //Variables
+  var inputElements = document.getElementsByTagName("input");
+  var errorDiv = document.getElementById("errorText");
+  var fieldsetValidity = true;
+  var elementCount = inputElements.length; //Will count the value
+  var currentElement; //Will count the value inputed by the user
+
+
+  //Try Clause
+  try {
+    console.log("inside try");
+
+    for (var i = 0; i < inputElements.length; i++) {
+        currentElement = inputElements[i];
+        //Change the color of the box if the user has not inputed anything in - "" (Empty)
+        if (currentElement.value === "") {
+          console.log("inside if");
+          currentElement.style.background = "rgb(255, 100, 100)";
+          fieldsetValidity = false;
+        } //End of if statement
+
+        else {
+          //Color will not change and will stay white if nothing is wrong
+          console.log("inside else");
+          currentElement.style.background = "white";
+        } //End of else statement
+      } //End of for statement
+
+
+      //This sends the message about the wronf form input
+      //If the throw statement the for loop then it will break the code because it loops
+      //through the error message as well error message as well which disrputs the code
+      if (fieldsetValidity === false) {
+        throw "Please complete all the required fields."
+      } //End of id statement
+      else {
+        errorDiv.style.display = "none";
+        errorDiv.innerHTML = "";
+      } //End of else statement
+  } //End of try clause
+
+
+  catch(msg) {
+    console.log(msg);
+    errorDiv.innerHTML = msg;
+    errorDiv.style.display = "block";
+    formValidity = false;
+  } //End of catch clause
 
 
 }
@@ -61,21 +109,21 @@ function validateForm(evt) {
 
 
   //For a valid form
-if (formValidity === true) {
+  if (formValidity === true) {
 
-  document.getElementById("errorText").innerHTML = "";
-  document.getElementById("errorText").style.display = "none";
-  document.getElementsByTagName("form")[0].submit();
-} //End of if statement
+    document.getElementById("errorText").innerHTML = "";
+    document.getElementById("errorText").style.display = "none";
+    document.getElementsByTagName("form")[0].submit();
+  } //End of if statement
 
-//For a invalid form
-else { //Displays error messageBox
-  console.log(formValidity);
+  //For a invalid form
+  else { //Displays error messageBox
+    console.log(formValidity);
 
-  document.getElementById("errorText").innerHTML = "Please fix the indicated problems and then resubmit your order.";
-  document.getElementById("errorText").style.display = "block";
-  //scroll(0, 0);
-} //End of else statement
+    document.getElementById("errorText").innerHTML = "Please fix the indicated problems and then resubmit your order.";
+    document.getElementById("errorText").style.display = "block";
+    //scroll(0, 0);
+  } //End of else statement
 }
 
 
