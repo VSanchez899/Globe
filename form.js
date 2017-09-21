@@ -92,7 +92,7 @@ function messageBox() {
     }
     if (fieldsetValidity === false) {
       // formValidity = false;
-      // if (fieldsetId === "billingAddress") {
+      
       throw "Please fill out message";
     } else {
       errorDiv.style.display = "none";
