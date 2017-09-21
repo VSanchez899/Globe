@@ -43,7 +43,7 @@ function inputElements() {
       } //End of for statement
 
 
-      //This sends the message about the wronf form input
+      //This sends the message about the wrong form input
       //If the throw statement the for loop then it will break the code because it loops
       //through the error message as well error message as well which disrputs the code
       if (fieldsetValidity === false) {
@@ -63,85 +63,23 @@ function inputElements() {
     errorDiv.style.display = "block";
     formValidity = false;
   } //End of catch clause
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-=======
-<<<<<<< HEAD
-
-=======
->>>>>>> origin/master
->>>>>>> Stashed changes
-}
-=======
 } //End of function inputElements()
 
->>>>>>> Stashed changes
 /*----------------------------------------function selectGender--------------------------------------------------------*/
 function selectGender() {
 
-<<<<<<< Updated upstream
-}
-<<<<<<< Updated upstream
-/*------------------------------------------function formType--------------------------------------------------------*/
-function formType() {
-  // alert("formType()");
-
-=======
-<<<<<<< HEAD
-
-/*------------------------------------------function formType--------------------------------------------------------*/
-function formType() {
-  console.log("inside messagetype");
-  var selectElements = document.getElementsByTagName("select");
-  var errorDiv = document.getElementById("errorText");
-  var fieldsetValidity = true;
-  var elementCount = selectElements.length;
-  var currentElement;
-
-  try {
-    for (var i = 0; i < selectElements.length; i++) {
-        currentElement = selectElements[i];
-        if (currentElement.value === "") {
-          currentElement.style.outline = "rgb(255, 100, 100)";
-          fieldsetValidity = false;
-        }
-
-        else {
-          currentElement.style.outline = "white";
-        }
-      }
-
-      if (fieldsetValidity === false) {
-        throw "Please complete all the required fields."
-      }
-      else {
-        errorDiv.style.display = "none";
-        errorDiv.innerHTML = "";
-      }
-  }
-
-  catch(msg) {
-    // console.log(msg);
-=======
-=======
 } //End of function selectGender()
 
 
 
->>>>>>> Stashed changes
 /*------------------------------------------function formType--------------------------------------------------------*/
 function formType() {
 
-<<<<<<< Updated upstream
->>>>>>> Stashed changes
-}
-=======
 } //End of function formType
 
 
 
 
->>>>>>> Stashed changes
 /*------------------------------------------function messageBox--------------------------------------------------------*/
 function messageBox() {
   // alert("messageBox()");
@@ -163,48 +101,20 @@ function messageBox() {
       errorDiv.style.display = "none";
       errorDiv.innerHTML = "";
     }
-  } catch (msg) {
+   catch (msg) {
     errorDiv.style.display = "block";
->>>>>>> origin/master
     errorDiv.innerHTML = msg;
-    errorDiv.style.display = "block";
     formValidity = false;
   }
 }
-function removeSelectDefaults() { //This is for the type of form question
-  console.log("selectedDefault");
-  var emptyBoxes = document.getElementsByTagName("select");
-  for (var i = 0; i < emptyBoxes.length; i++) {
-    emptyBoxes[i].selectedIndex = -1;
-  }
-}
-/*------------------------------------------function messageBox--------------------------------------------------------*/
-function messageBox() {
 
-<<<<<<< Updated upstream
+
 
 
 /*-----------------------------------------function validateForm--------------------------------------------------------*/
 function validateForm(evt) {
-  // console.log("inside validateForm");
-=======
-}
-
-
-/*-----------------------------------------function validateForm--------------------------------------------------------*/
-function validateForm(evt) {
-<<<<<<< Updated upstream
-<<<<<<< HEAD
-  // console.log("inside validateForm");
-=======
->>>>>>> Stashed changes
-
-  // console.log("inside validateForm");
-=======
   console.log("inside validateForm");
->>>>>>> Stashed changes
 
->>>>>>> origin/master
   //Variables
   var form = document.getElementsByTagName("form")[0];
   var errorText = document.getElementById("errorText");
@@ -222,7 +132,6 @@ function validateForm(evt) {
   inputElements();
   formType();
   messageBox();
-  removeSelectDefaults();
 
 
   //For a valid form
@@ -234,24 +143,7 @@ function validateForm(evt) {
 
   //For an invalid form
   else { //Displays error messageBox
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-
-    // console.log(formValidity);
-
-=======
-<<<<<<< HEAD
     console.log(formValidity);
-=======
-
-    // console.log(formValidity);
-
->>>>>>> origin/master
->>>>>>> Stashed changes
-
-=======
-    console.log(formValidity);
->>>>>>> Stashed changes
     document.getElementById("errorText").innerHTML = "Please fix the indicated problems and then resubmit your order.";
     document.getElementById("errorText").style.display = "block";
     //scroll(0, 0);
