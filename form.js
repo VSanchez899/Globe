@@ -79,15 +79,10 @@ function inputElements() {
 /*----------------------------------------function selectGender--------------------------------------------------------*/
 function selectGender() {
 
-<<<<<<< Updated upstream
 }
-<<<<<<< Updated upstream
+
 /*------------------------------------------function formType--------------------------------------------------------*/
 function formType() {
-  // alert("formType()");
-
-=======
-<<<<<<< HEAD
 
 /*------------------------------------------function formType--------------------------------------------------------*/
 function formType() {
@@ -121,9 +116,7 @@ function formType() {
   }
 
   catch(msg) {
-    // console.log(msg);
-=======
-=======
+
 } //End of function selectGender()
 
 
@@ -132,10 +125,6 @@ function formType() {
 /*------------------------------------------function formType--------------------------------------------------------*/
 function formType() {
 
-<<<<<<< Updated upstream
->>>>>>> Stashed changes
-}
-=======
 } //End of function formType
 
 
