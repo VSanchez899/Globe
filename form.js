@@ -68,7 +68,6 @@ function inputElements() {
 /*----------------------------------------function selectGender--------------------------------------------------------*/
 function selectGender() {
 
-<<<<<<< HEAD
 }
 
 /*------------------------------------------function formType--------------------------------------------------------*/
@@ -107,8 +106,6 @@ function formType() {
 
   catch(msg) {
 
-=======
->>>>>>> f2bc1291f287bfdeae1487c2f25988c4a6bba205
 } //End of function selectGender()
 
 
