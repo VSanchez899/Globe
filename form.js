@@ -24,20 +24,17 @@ function inputElements() {
 
   //Try Clause
   try {
-    console.log("inside try");
 
     for (var i = 0; i < inputElements.length; i++) {
         currentElement = inputElements[i];
         //Change the color of the box if the user has not inputed anything in - "" (Empty)
         if (currentElement.value === "") {
-          console.log("inside if");
           currentElement.style.background = "rgb(255, 100, 100)";
           fieldsetValidity = false;
         } //End of if statement
 
         else {
           //Color will not change and will stay white if nothing is wrong
-          console.log("inside else");
           currentElement.style.background = "white";
         } //End of else statement
       } //End of for statement
@@ -57,7 +54,10 @@ function inputElements() {
 
 
   catch(msg) {
+<<<<<<< HEAD
     // console.log(msg);
+=======
+>>>>>>> origin/master
     errorDiv.innerHTML = msg;
     errorDiv.style.display = "block";
     formValidity = false;
@@ -111,7 +111,10 @@ function messageBox() {
 
 /*-----------------------------------------function validateForm--------------------------------------------------------*/
 function validateForm(evt) {
+<<<<<<< HEAD
   // console.log("inside validateForm");
+=======
+>>>>>>> origin/master
   //Variables
   var form = document.getElementsByTagName("form")[0];
   var errorText = document.getElementById("errorText");
@@ -142,7 +145,10 @@ function validateForm(evt) {
 
   //For a invalid form
   else { //Displays error messageBox
+<<<<<<< HEAD
     // console.log(formValidity);
+=======
+>>>>>>> origin/master
 
     document.getElementById("errorText").innerHTML = "Please fix the indicated problems and then resubmit your order.";
     document.getElementById("errorText").style.display = "block";
