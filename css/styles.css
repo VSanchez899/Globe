@@ -26,16 +26,17 @@ p {
     color: #000;
 }
 
+.location {
+  margin-top: 15%;
+}
+
 .message {
-<<<<<<< HEAD
   text-align: left;
 }
 
 .social {
   text-align: center;
-=======
-    text-align: center;
->>>>>>> 339aad8f621d6e675561febbb8dc787cb25a0dae
+  text-align: center;
 }
 
 .blue {
@@ -185,6 +186,10 @@ footer p {
         table-layout: fixed;
         font-size: 1.25em;
     }
+
+    .location {
+      padding-top: none;
+    }
 }
 
 #socialMedia {
@@ -213,4 +218,8 @@ div.scrollmenu li {
     text-align: center;
     padding: 14px;
     text-decoration: none;
+
+  .location {
+    padding-top: none;
+  }
 }
