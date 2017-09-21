@@ -164,7 +164,6 @@ function messageBox() {
 
 /*-----------------------------------------function validateForm--------------------------------------------------------*/
 function validateForm(evt) {
-
   // console.log("inside validateForm");
 =======
 }
