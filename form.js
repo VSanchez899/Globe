@@ -55,10 +55,7 @@ function inputElements() {
 
 
   catch(msg) {
-<<<<<<< HEAD
     // console.log(msg);
-=======
->>>>>>> origin/master
     errorDiv.innerHTML = msg;
     errorDiv.style.display = "block";
     formValidity = false;
@@ -136,10 +133,14 @@ function validateForm(evt) {
 =======
 /*-----------------------------------------function validateForm--------------------------------------------------------*/
 function validateForm(evt) {
-<<<<<<< HEAD
+
   // console.log("inside validateForm");
+<<<<<<< HEAD
 =======
 >>>>>>> origin/master
+>>>>>>> origin/master
+=======
+
 >>>>>>> origin/master
   //Variables
   var form = document.getElementsByTagName("form")[0];
@@ -171,12 +172,15 @@ function validateForm(evt) {
   //For an invalid form
   else { //Displays error messageBox
 <<<<<<< HEAD
+<<<<<<< HEAD
     console.log(formValidity);
 =======
 <<<<<<< HEAD
-    // console.log(formValidity);
 =======
+
 >>>>>>> origin/master
+    // console.log(formValidity);
+
 
 >>>>>>> origin/master
     document.getElementById("errorText").innerHTML = "Please fix the indicated problems and then resubmit your order.";
