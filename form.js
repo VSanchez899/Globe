@@ -142,11 +142,11 @@ function messageBox() {
       errorDiv.style.display = "none";
       errorDiv.innerHTML = "";
     }
-   catch (msg) {
-    errorDiv.style.display = "block";
-    errorDiv.innerHTML = msg;
-    formValidity = false;
-  }
+    catch (msg) {
+     errorDiv.style.display = "block";
+     errorDiv.innerHTML = msg;
+     formValidity = false;
+   }
 }
 
 
