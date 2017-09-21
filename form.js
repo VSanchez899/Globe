@@ -14,7 +14,6 @@ var formValidity = true;
 
 /*------------------------------------------function userName--------------------------------------------------------*/
 function inputElements() {
-<<<<<<< HEAD
   //Variables
   var inputElements = document.getElementsByTagName("input");
   var errorDiv = document.getElementById("errorText");
@@ -44,7 +43,7 @@ function inputElements() {
       } //End of for statement
 
 
-      //This sends the message about the wronf form input
+      //This sends the message about the wrong form input
       //If the throw statement the for loop then it will break the code because it loops
       //through the error message as well error message as well which disrputs the code
       if (fieldsetValidity === false) {
@@ -64,8 +63,6 @@ function inputElements() {
     formValidity = false;
   } //End of catch clause
 
-=======
->>>>>>> origin/master
 
 }
 /*----------------------------------------function selectGender--------------------------------------------------------*/
@@ -103,7 +100,7 @@ function validateForm(evt) {
 
   formValidity = true;
 
-  // VALIDITY TESTS HERE ------ MPK - 9/20/17
+  // VALIDITY TESTS HERE
   inputElements();
   formType();
   messageBox();
