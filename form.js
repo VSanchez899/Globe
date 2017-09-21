@@ -24,20 +24,17 @@ function inputElements() {
 
   //Try Clause
   try {
-    console.log("inside try");
 
     for (var i = 0; i < inputElements.length; i++) {
         currentElement = inputElements[i];
         //Change the color of the box if the user has not inputed anything in - "" (Empty)
         if (currentElement.value === "") {
-          console.log("inside if");
           currentElement.style.background = "rgb(255, 100, 100)";
           fieldsetValidity = false;
         } //End of if statement
 
         else {
           //Color will not change and will stay white if nothing is wrong
-          console.log("inside else");
           currentElement.style.background = "white";
         } //End of else statement
       } //End of for statement
@@ -58,15 +55,24 @@ function inputElements() {
 
 
   catch(msg) {
-    console.log(msg);
+<<<<<<< HEAD
+    // console.log(msg);
+=======
+>>>>>>> origin/master
     errorDiv.innerHTML = msg;
     errorDiv.style.display = "block";
     formValidity = false;
   } //End of catch clause
 } //End of function inputElements()
 
+<<<<<<< HEAD
+=======
+
+}
+>>>>>>> origin/master
 /*----------------------------------------function selectGender--------------------------------------------------------*/
 function selectGender() {
+// alert("selectGender()");
 
 } //End of function selectGender()
 
@@ -74,11 +80,17 @@ function selectGender() {
 
 /*------------------------------------------function formType--------------------------------------------------------*/
 function formType() {
+<<<<<<< HEAD
 
 } //End of function formType
 
 
 
+=======
+  // alert("formType()");
+
+}
+>>>>>>> origin/master
 
 /*------------------------------------------function messageBox--------------------------------------------------------*/
 function messageBox() {
@@ -96,6 +108,10 @@ function messageBox() {
     }
     if (fieldsetValidity === false) {
       // formValidity = false;
+<<<<<<< HEAD
+=======
+
+>>>>>>> origin/master
       throw "Please fill out message";
     } else {
       errorDiv.style.display = "none";
@@ -111,11 +127,20 @@ function messageBox() {
 
 
 
+<<<<<<< HEAD
 
 /*-----------------------------------------function validateForm--------------------------------------------------------*/
 function validateForm(evt) {
   console.log("inside validateForm");
 
+=======
+/*-----------------------------------------function validateForm--------------------------------------------------------*/
+function validateForm(evt) {
+<<<<<<< HEAD
+  // console.log("inside validateForm");
+=======
+>>>>>>> origin/master
+>>>>>>> origin/master
   //Variables
   var form = document.getElementsByTagName("form")[0];
   var errorText = document.getElementById("errorText");
@@ -129,9 +154,10 @@ function validateForm(evt) {
 
   formValidity = true;
 
-  // VALIDITY TESTS HERE ------ MPK - 9/20/17
+  // VALIDITY TESTS HERE
   inputElements();
   formType();
+  selectGender();
   messageBox();
 
 
@@ -144,7 +170,15 @@ function validateForm(evt) {
 
   //For an invalid form
   else { //Displays error messageBox
+<<<<<<< HEAD
     console.log(formValidity);
+=======
+<<<<<<< HEAD
+    // console.log(formValidity);
+=======
+>>>>>>> origin/master
+
+>>>>>>> origin/master
     document.getElementById("errorText").innerHTML = "Please fix the indicated problems and then resubmit your order.";
     document.getElementById("errorText").style.display = "block";
     //scroll(0, 0);
