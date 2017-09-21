@@ -27,7 +27,6 @@ function formType() {
   // var fieldsetValidity = true;
   // var elementCount = inputElements.length;
   // var currentElement;
-
 }
 
 /*------------------------------------------function messageBox--------------------------------------------------------*/
