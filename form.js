@@ -67,6 +67,7 @@ function inputElements() {
 }
 /*----------------------------------------function selectGender--------------------------------------------------------*/
 function selectGender() {
+// alert("selectGender()");
 
 }
 
@@ -92,7 +93,7 @@ function messageBox() {
     }
     if (fieldsetValidity === false) {
       // formValidity = false;
-      
+
       throw "Please fill out message";
     } else {
       errorDiv.style.display = "none";
@@ -127,6 +128,7 @@ function validateForm(evt) {
   // VALIDITY TESTS HERE
   inputElements();
   formType();
+  selectGender();
   messageBox();
 
 
