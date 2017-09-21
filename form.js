@@ -76,7 +76,7 @@ function messageBox() {
   var errorDiv = document.getElementById("errorText")
   var msgBox = document.getElementById("messageBox");
   var fieldsetValidity = true;
-  // fieldsetValidity = false;
+
   try {
     if (document.getElementsByClassName("errorMesssage")) {
       msgBox.style.background = "rgb(255, 100, 100)";
