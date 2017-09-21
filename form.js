@@ -14,10 +14,9 @@ var formValidity = true;
 
 /*------------------------------------------function userName--------------------------------------------------------*/
 function inputElements() {
-<<<<<<< HEAD
   //Variables
   var inputElements = document.getElementsByTagName("input");
-  var errorDiv = document.getElementById("errorText");
+  var errorDiv = document.getElementById("errorMessage");
   var fieldsetValidity = true;
   var elementCount = inputElements.length; //Will count the value
   var currentElement; //Will count the value inputed by the user
@@ -44,10 +43,11 @@ function inputElements() {
       } //End of for statement
 
 
-      //This sends the message about the wronf form input
+      //This sends the message about the wrong form input
       //If the throw statement the for loop then it will break the code because it loops
       //through the error message as well error message as well which disrputs the code
       if (fieldsetValidity === false) {
+        console.log("inside the if message");
         throw "Please complete all the required fields."
       } //End of id statement
       else {
@@ -63,33 +63,59 @@ function inputElements() {
     errorDiv.style.display = "block";
     formValidity = false;
   } //End of catch clause
+} //End of function inputElements()
 
-=======
->>>>>>> origin/master
-
-}
 /*----------------------------------------function selectGender--------------------------------------------------------*/
 function selectGender() {
 
-}
+} //End of function selectGender()
+
+
 
 /*------------------------------------------function formType--------------------------------------------------------*/
 function formType() {
-  // var errorDiv = document.getElementById("errorText");
-  // var fieldsetValidity = true;
-  // var elementCount = inputElements.length;
-  // var currentElement;
-}
+
+} //End of function formType
+
+
+
 
 /*------------------------------------------function messageBox--------------------------------------------------------*/
 function messageBox() {
-
+  // alert("messageBox()");
+  var errorDiv = document.getElementById("errorText")
+  var msgBox = document.getElementById("messageBox");
+  var fieldsetValidity = true;
+  // fieldsetValidity = false;
+  try {
+    if (document.getElementsByClassName("errorMesssage")) {
+      msgBox.style.background = "rgb(255, 100, 100)";
+      fieldsetValidity = false;
+    } else {
+      msgBox.style.background = "white";
+    }
+    if (fieldsetValidity === false) {
+      // formValidity = false;
+      throw "Please fill out message";
+    } else {
+      errorDiv.style.display = "none";
+      errorDiv.innerHTML = "";
+    }
+  } catch (msg) {
+    errorDiv.style.display = "block";
+    errorDiv.innerHTML = msg;
+    formValidity = false;
+  }
+// console.log(errorDiv);
 }
+
+
 
 
 /*-----------------------------------------function validateForm--------------------------------------------------------*/
 function validateForm(evt) {
   console.log("inside validateForm");
+
   //Variables
   var form = document.getElementsByTagName("form")[0];
   var errorText = document.getElementById("errorText");
@@ -111,21 +137,19 @@ function validateForm(evt) {
 
   //For a valid form
   if (formValidity === true) {
-
     document.getElementById("errorText").innerHTML = "";
     document.getElementById("errorText").style.display = "none";
     document.getElementsByTagName("form")[0].submit();
   } //End of if statement
 
-  //For a invalid form
+  //For an invalid form
   else { //Displays error messageBox
     console.log(formValidity);
-
     document.getElementById("errorText").innerHTML = "Please fix the indicated problems and then resubmit your order.";
     document.getElementById("errorText").style.display = "block";
     //scroll(0, 0);
   } //End of else statement
-}
+} //End of function validateForm()
 
 
 /*-------------------------------------function createEventListeners--------------------------------------------------------*/
@@ -143,7 +167,7 @@ function createEventListeners() {
 
 
 /*-----------------------------------------------Load Event------------------------------------------------------------*/
-//Adding an event listener so it goes to the function
+//Adding an event listener so it goes through the functions
 //Will make sure the functions are working
 // if statement is for chrome
 if (window.addEventListener) {
