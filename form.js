@@ -57,7 +57,7 @@ function inputElements() {
 
 
   catch(msg) {
-    console.log(msg);
+    // console.log(msg);
     errorDiv.innerHTML = msg;
     errorDiv.style.display = "block";
     formValidity = false;
@@ -72,21 +72,45 @@ function selectGender() {
 
 /*------------------------------------------function formType--------------------------------------------------------*/
 function formType() {
-  // var errorDiv = document.getElementById("errorText");
-  // var fieldsetValidity = true;
-  // var elementCount = inputElements.length;
-  // var currentElement;
+  // alert("formType()");
+
 }
 
 /*------------------------------------------function messageBox--------------------------------------------------------*/
 function messageBox() {
-
+  // alert("messageBox()");
+  var errorDiv = document.getElementById("errorText")
+  var msgBox = document.getElementById("messageBox");
+  var fieldsetValidity = true;
+  // fieldsetValidity = false;
+  try {
+    if (document.getElementsByClassName("errorMesssage")) {
+      msgBox.style.background = "rgb(255, 100, 100)";
+      fieldsetValidity = false;
+    } else {
+      msgBox.style.background = "white";
+    }
+    if (fieldsetValidity === false) {
+      // formValidity = false;
+      // if (fieldsetId === "billingAddress") {
+      throw "Please fill out message";
+    } else {
+      errorDiv.style.display = "none";
+      errorDiv.innerHTML = "";
+    }
+  } catch (msg) {
+    errorDiv.style.display = "block";
+    errorDiv.innerHTML = msg;
+    formValidity = false;
+  }
+// console.log(errorDiv);
 }
+
 
 
 /*-----------------------------------------function validateForm--------------------------------------------------------*/
 function validateForm(evt) {
-  console.log("inside validateForm");
+  // console.log("inside validateForm");
   //Variables
   var form = document.getElementsByTagName("form")[0];
   var errorText = document.getElementById("errorText");
@@ -116,7 +140,7 @@ function validateForm(evt) {
 
   //For a invalid form
   else { //Displays error messageBox
-    console.log(formValidity);
+    // console.log(formValidity);
 
     document.getElementById("errorText").innerHTML = "Please fix the indicated problems and then resubmit your order.";
     document.getElementById("errorText").style.display = "block";
