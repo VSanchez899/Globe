@@ -72,6 +72,7 @@ function selectGender() {
 
 /*------------------------------------------function formType--------------------------------------------------------*/
 function formType() {
+}
 
 /*------------------------------------------function formType--------------------------------------------------------*/
 function formType() {
@@ -105,6 +106,7 @@ function formType() {
   }
 
   catch(msg) {
+  }
 
 } //End of function selectGender()
 
@@ -144,7 +146,17 @@ function messageBox() {
     errorDiv.innerHTML = msg;
     formValidity = false;
   }
+<<<<<<< HEAD
 }
+=======
+
+    catch (msg) {
+     errorDiv.style.display = "block";
+     errorDiv.innerHTML = msg;
+     formValidity = false;
+   }
+ }
+>>>>>>> origin/master
 
 
 
