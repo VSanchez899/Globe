@@ -146,20 +146,14 @@ function messageBox() {
     errorDiv.innerHTML = msg;
     formValidity = false;
   }
-<<<<<<< HEAD
-}
-=======
 
+}
     catch (msg) {
      errorDiv.style.display = "block";
      errorDiv.innerHTML = msg;
      formValidity = false;
    }
  }
->>>>>>> origin/master
-
-
-
 
 /*-----------------------------------------function validateForm--------------------------------------------------------*/
 function validateForm(evt) {
