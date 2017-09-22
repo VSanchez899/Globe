@@ -49,7 +49,7 @@ function inputElements() {
       if (fieldsetValidity === false) {
         console.log("inside the if message");
         throw "Please complete all the required fields."
-      } //End of id statement
+      } //End of if statement
       else {
         errorDiv.style.display = "none";
         errorDiv.innerHTML = "";
