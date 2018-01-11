@@ -229,3 +229,8 @@ div.scrollmenu li {
   margin-right: auto;
   text-align: center;
 }
+
+#navLogo {
+  width: 40%;
+  float:right;
+}
